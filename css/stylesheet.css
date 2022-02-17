@@ -15,6 +15,8 @@ html{
   background-color:#FFFBDB;
   color:black;
   border: none;
+  font-size: 20px;
+  text-align:right;
 }
 button:hover{
   background-color:#FFEC51;
