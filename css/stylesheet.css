@@ -1,24 +1,22 @@
-p{
-  color:red;
-  text-align: center;
-}
-
 h1{
-  font-style:italic;
-  font-size: 200%;
+  text-align:center;margin:0;
 }
-p::first-letter{
-  font-size:300%;
+h2{
+  font-size: 20px;
+  text-align:center;
+  margin:0;
 }
-#test-id-1{
-  color:purple;
+html{
+  background-color:#FFFBDB;
+  color:black;
+  font-family:serif;
 }
-
-.test-class{
-  color:orange;
-  text-shadow: 5px 5px red;
+.button{
+  background-color:#FFFBDB;
+  color:black;
+  border: none;
 }
-
-a:hover{
-  color:white;
+button:hover{
+  background-color:#FFEC51;
+  color:black;
 }
