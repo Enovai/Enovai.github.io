@@ -14,11 +14,17 @@ html{
 .button{
   background-color:#FFFBDB;
   color:black;
-  border: none;
-  font-size: 20px;
-  text-align:right;
+  text-decoration:none;
+  text-align:center;
+  border:none;
 }
 button:hover{
-  background-color:#FFEC51;
+  background-color: #FFEC51;
+  text-align:center;
   color:black;
+  text-decoration:none;
+  border-radius: 12.5%;
+  height: 32.5px;
+  width: 75px;
+  border:none;
 }
