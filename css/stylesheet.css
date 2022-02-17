@@ -34,3 +34,9 @@ button:hover{
   border-collapse:collapse;
   color:black;
 }
+hr{
+  color:#FF674D;
+  background-color:#FF674D;
+  font-size:1px;
+  height:2px;
+}
