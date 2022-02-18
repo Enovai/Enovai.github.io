@@ -36,9 +36,13 @@ button:hover{
   color:black;
 }
 .photo{
-  text-align:center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 hr{
   margin:0;
-  color:
+  color:black;
+  background-color:#FF674D;
 }
