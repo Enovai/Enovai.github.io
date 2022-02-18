@@ -6,11 +6,13 @@ h2{
   font-size: 20px;
   text-align:center;
   margin:0;
+  color:grey;
+  background-color: #FFFBDB;
 }
 html{
   background-color:#FFFBDB;
   color:black;
-  font-family:serif;
+  font-family:Copperplate,fantasy;
 }
 .button{
   background-color:#FFEC51;
@@ -25,7 +27,6 @@ button:hover{
   color:black;
   padding:5px 5px;
   border-top-left-radius: 5px;
-  text-decoration:none;
   border:none;
 }
 #identi{
@@ -33,4 +34,7 @@ button:hover{
   background-color:#FFEC51;
   border-collapse:collapse;
   color:black;
+}
+hr{
+  margin:0;
 }
