@@ -27,7 +27,7 @@ html{
   text-align:center;
   border:none;
 }
-button:hover{
+.button:hover{
   background-color: #FFFBDB;
   text-align:center;
   color:black;
@@ -52,15 +52,15 @@ hr{
   color:red;
   background-color:#FF674D;
 }
+.video:hover{
+  background-color:#FFFBDB;
+  color:#CDC7E5;
+
+}
 .video{
   background-color:#FFFBDB;
   color:#7776BC;
   text-decoration:none;
   text-align:center;
   border:none;
-}
-video:hover{
-  background-color:#FFFBDB;
-  color:#CDC7E5;
-
 }
