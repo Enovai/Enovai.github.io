@@ -42,7 +42,8 @@ button:hover{
 }
 hr{
   margin:0;
-  color:black;
+  height:2px;
+  color:red;
   background-color:#FF674D;
 }
 .video{
@@ -53,6 +54,7 @@ hr{
   border:none;
 }
 video:hover{
-  background-color:#CDC7E5;
+  background-color:#FFFBDB;
   color:#CDC7E5;
+
 }
