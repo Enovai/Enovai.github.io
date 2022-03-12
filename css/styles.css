@@ -1,4 +1,8 @@
 @media screen and (min-width:400px){
+  a{
+    color:#7776BC;
+    background-color:inherit;
+  }
   body{
     background:linear-gradient(to right,white 0%,white 50%,#FFEC51 50%,#FFEC51 0%);
   }
