@@ -1,16 +1,9 @@
 @media screen and (min-width:400px){
-  .links{
-    background-color:#FFEC51;
-    margin:auto;
-  }
   .button{
     color:#7776BC;
     padding: 15px 15px;
     text-decoration: none;
     border-radius: 10px;
-  }
-  button:hover{
-    background-color:#FFFBDB;
   }
   body{
     background:linear-gradient(to right,white 0%,white 50%,#FFEC51 50%,#FFEC51 0%);
@@ -93,6 +86,7 @@
   }
   p{
     text-align:center;
+    font-size: 20px;
   }
   .box{
     background-color: inherit;
