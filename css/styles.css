@@ -1,7 +1,18 @@
 @media screen and (min-width:400px){
-  a{
+  .links{
+    text-align: center;
+  }
+  .button{
+    position:relative;
     color:#7776BC;
-    background-color:inherit;
+    padding: 50px 50px;
+    text-decoration: none;
+    object-fit: cover;
+    border-radius: 6px;
+    white-space: nowrap;
+  }
+  button:hover{
+    background-color:#FFFBDB;
   }
   body{
     background:linear-gradient(to right,white 0%,white 50%,#FFEC51 50%,#FFEC51 0%);
