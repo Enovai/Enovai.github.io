@@ -1,15 +1,13 @@
 @media screen and (min-width:400px){
   .links{
-    text-align: center;
+    background-color:#FFEC51;
+    margin:auto;
   }
   .button{
-    position:relative;
     color:#7776BC;
-    padding: 50px 50px;
+    padding: 15px 15px;
     text-decoration: none;
-    object-fit: cover;
-    border-radius: 6px;
-    white-space: nowrap;
+    border-radius: 10px;
   }
   button:hover{
     background-color:#FFFBDB;
