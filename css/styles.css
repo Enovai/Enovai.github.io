@@ -5,6 +5,11 @@
     text-decoration: none;
     border-radius: 10px;
   }
+  .button:hover{
+    color:#CDC7E5;
+    background-color:#FFFBDB;
+    border-radius:20px;
+  }
   body{
     background:linear-gradient(to right,white 0%,white 50%,#FFEC51 50%,#FFEC51 0%);
   }
@@ -24,8 +29,11 @@
     text-align:center;
     font-size:20px;
   }
-  a{
-    font-color:
+  .vid{
+    color:#7776BC;
+  }
+  .vid:hover{
+    color:#CDC7E5;
   }
   .box{
     background-color: inherit;
@@ -67,6 +75,12 @@
     grid-row:5;
     grid-column:2/3;
     padding:25px;
+  }
+  .linkedin{
+    color:#7776BC;
+  }
+  .linkedin:hover{
+    color:#CDC7E5;
   }
 
 }
