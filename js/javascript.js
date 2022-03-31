@@ -5,4 +5,8 @@ function windowLoaded(){
   console.log('loaded ok!');
   document.getElementById('button-1').addEventListener('click',button1Clicked);
 }
+function changeColor(color){
+  var clicked=document.getElementById('Change');
+  clicked.style.color=color;
+}
 window.onload=windowLoaded;

@@ -10,9 +10,9 @@
     background-color:#FFFBDB;
     border-radius:20px;
   }
-  button{
-    transition:all 1000 ms ease-in-out;
-    font-size:40px;
+  .one{
+    margin: 0 auto;
+    text-align:center;
   }
   .was-clicked{
     padding:20px;
