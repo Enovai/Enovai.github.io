@@ -16,6 +16,10 @@ async function getQuote(){
     }
   }
 }
+function displayQuote(quote){
+  const quoteText = document.querySelector('#js-quote-text');
+  quotetext.textContent=quote;
+}
 const endpoint = 'http://quotes.stormconsultancy.co.uk/random.json';
 const quoteButton = document.querySelector('#js-new-quote');
 
