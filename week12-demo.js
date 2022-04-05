@@ -10,6 +10,7 @@ async function getQuote(){
     }
     const json= await response.json();
     console.log(json);
+    displayQuote(json.message);
     catch(err){
       console.log(err);
       alert('failed');
