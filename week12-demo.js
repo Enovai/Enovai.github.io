@@ -16,7 +16,7 @@ async function getQuote(){
     }
   }
 }
-const endpoint = 'https://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1';
+const endpoint = 'http://quotes.stormconsultancy.co.uk/random.json';
 const quoteButton = document.querySelector('#js-new-quote');
 
 quoteButton.addEventListener('click',getQuote);
