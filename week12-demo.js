@@ -20,6 +20,7 @@ function displayQuote(quote){
   const quoteText = document.querySelector('#js-quote-text');
   quoteText.textContent=quote;
 }
+
 const endpoint = 'https://geek-jokes.sameerkumar.website/api';
 const quoteButton = document.querySelector('#js-new-quote');
 
