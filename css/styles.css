@@ -86,12 +86,13 @@
     text-align:right;
   }
   .generator{
-  display: flex;
-  width: 20%;
-  margin: auto;
-  min-height: 80vh;
-  align-items: center;
-  text-align: center;
+    display: flex;
+    width: 20%;
+    flex-direction: column;
+    margin: auto;
+    min-height: 80vh;
+    align-items: center;
+    text-align: center;
   }
   .image{
     grid-row:2;
