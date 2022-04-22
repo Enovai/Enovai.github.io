@@ -67,7 +67,7 @@ console.log('Problem 5',company);
 const peopleFWH =['Anna','Sam'];
 for(var i=0;i<company.employees.length;i++)
 {
-  if(peopleWFH.includes(company.employees[i].name))
+  if(peopleFWH.includes(company.employees[i].name))
   {
     company.employees[i].wfh=true;
   }
