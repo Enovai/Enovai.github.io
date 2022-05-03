@@ -19,17 +19,21 @@
     font-size:20px;
   }
   img{
-    height: 300px
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  .images{
+    height: 300px;
     width: 100%;
     object-fit: cover;
     opacity:0.5;
     transition: 1s ease;
   }
-  img:hover{
+  .images:hover{
     opacity:1;
     transition: 1s ease;
   }
-
   .button{
     text-decoration: none;
     cursor: pointer;
@@ -126,7 +130,7 @@
     font-size: 20px;
   }
   img{
-    height: 300px
+    height: 300px;
     width: 100%;
     object-fit: cover;
   }
