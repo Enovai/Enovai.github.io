@@ -10,3 +10,8 @@ function changeColor(color){
   clicked.style.color=color;
 }
 window.onload=windowLoaded;
+
+function fadeOut(){
+  const effect= document.getElementById('effect');
+  effect.style.opacity='0';
+}

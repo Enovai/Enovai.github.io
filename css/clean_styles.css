@@ -23,6 +23,11 @@
     width: 100%;
     object-fit: cover;
   }
+  #effect{
+    background: inherit;
+
+    transition:2s ease;
+  }
   .images{
     height: auto;
     width: 100%;
