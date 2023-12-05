@@ -20,7 +20,7 @@
 
         nav {
             display: flex;
-            justify-content: center;
+            justify-content: flex-start; /* Align items to the left */
             background-color: #333;
             padding: 10px;
         }
@@ -47,6 +47,8 @@
             min-width: 160px;
             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
             z-index: 1;
+            top: 100%; /* Position the dropdown below the parent element */
+            left: 0; /* Align the dropdown to the left side */
         }
 
         .dropdown:hover .dropdown-content {
@@ -61,7 +63,6 @@
     </header>
 
     <nav>
-        <!-- If you want to keep the dropdown, you can leave this part -->
         <div class="dropdown">
             <a href="#">Tab</a>
             <div class="dropdown-content">
