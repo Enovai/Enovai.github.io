@@ -1,40 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Buff Beyond Borders</title>
   <meta charset="utf-8">
+  <title>Buffs Beyond Borders</title>
+  <link href="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css" rel="stylesheet">
+  <script src="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js"></script>
   <style>
-    /* Set the size of the map container */
-    #map {
+    body, html, #map {
+      margin: 0;
+      padding: 0;
       width: 100%;
-      height: 500px;
+      height: 100%;
     }
   </style>
 </head>
 <body>
-  <!-- Add the map container -->
   <div id="map"></div>
-
-  <!-- Include the Mapbox JavaScript library -->
-  <script src='https://api.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.js'></script>
-
-  <!-- Include your Mapbox style (replace 'your.style.json' with the URL of your style) -->
-  <link href='https://api.mapbox.com/styles/v1/enovai/cku89g94r000717oz89zo0jsn.html?fresh=true&title=copy&access_token=your-access-token' rel='stylesheet'>
-
-  <!-- Add your JavaScript code to initialize the map -->
   <script>
-    window.onload = function() {
-      // Create a map object
-      const map = new mapboxgl.Map({
-        // Set the container element
-        container: 'map',
-        // Set the style URL
-        style: 'https://api.mapbox.com/styles/v1/enovai/cku89g94r000717oz89zo0jsn.html?fresh=true&title=copy&access_token=your-access-token',
-        // Set the center and zoom level
-        center: [-74.5, 40],
-        zoom: 9
-      });
-    };
+
+    mapboxgl.accessToken = 'pk.eyJ1IjoiZW5vdmFpIiwiYSI6ImNsdGl4YnVoZzBrZHEyaHRrNnoxZjQzdHkifQ.7lB5Jkr8MUsVVaxziEKjRg';
+    
+    const mapStyle = 'mapbox://styles/mapbox/streets-v11';
+    
+    const map = new mapboxgl.Map({
+      container: 'map',
+      style: mapStyle,
+      center: [-74.5, 40],
+      zoom: 9
+    });
   </script>
 </body>
 </html>
