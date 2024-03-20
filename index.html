@@ -6,15 +6,25 @@
   <link href="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css" rel="stylesheet">
   <script src="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js"></script>
   <style>
-    body, html, #map {
+    body, html {
       margin: 0;
       padding: 0;
       width: 100%;
       height: 100%;
     }
-     .navbar {
+    
+    #map {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 100%;
+    }
+    
+    .navbar {
       background-color: #333;
       overflow: hidden;
+      position: relative;
+      z-index: 1;
     }
     
     .navbar a {
@@ -33,19 +43,6 @@
   </style>
 </head>
 <body>
-  <div id="map"></div>
-  <script>
-    mapboxgl.accessToken = 'pk.eyJ1IjoiZW5vdmFpIiwiYSI6ImNsdGl4YnVoZzBrZHEyaHRrNnoxZjQzdHkifQ.7lB5Jkr8MUsVVaxziEKjRg';
-
-    const mapStyle = 'mapbox://styles/mapbox/streets-v11';
-    
-    const map = new mapboxgl.Map({
-      container: 'map',
-      style: mapStyle,
-      center: [-74.5, 40],
-      zoom: 9
-    });
-  </script>
   <div class="navbar">
     <a href="https://www.colorado.edu/educationabroad/programs">Programs</a>
     <a href="https://www.colorado.edu/educationabroad/staff">Staff</a>
@@ -60,5 +57,20 @@
     <a href="https://www.colorado.edu/educationabroad/australia">Australia</a>
     <a href="https://www.colorado.edu/educationabroad/login">LOGIN</a>
   </div>
-</body>
+  <div id="map"></div>
+  <script>
+    mapboxgl.accessToken = 'pk.eyJ1IjoiZW5vdmFpIiwiYSI6ImNsdGl4YnVoZzBrZHEyaHRrNnoxZjQzdHkifQ.7lB5Jkr8MUsVVaxziEKjRg';
+
+    const mapStyle = 'mapbox="https://www.colorado.edu/educationabroad/europe">Europe</a>
+    <a href="https://www.colorado.edu/educationabroad/south-america">South America</a>
+    <a href="https://www.colorado.://styles/mapbox/streets-v11';
+    
+    const map = newedu/educationabroad/africa">Africa</a>
+    <a href="https://www.colorado.edu/educationabroad mapboxgl.Map({
+      container: 'map',
+      style: mapStyle,
+      center: [-74.5, 40],
+      zoom: 9
+    });
+  </script>
 </html>
