@@ -19,7 +19,6 @@
             justify-content: space-between;
             padding: 0 10px;
             box-sizing: border-box;
-            color: white; /* Add this line to change the color of the text to white */
         }
 
         #navbar .navbar-item {
@@ -28,6 +27,11 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            color: gray;
+        }
+
+        #navbar .brand {
+            color: white;
         }
 
         #map {
@@ -38,7 +42,7 @@
 </head>
 <body>
     <div id="navbar">
-        <div>Education Abroad</div>
+        <div class="brand">Education Abroad</div>
         <div class="navbar-item">Search our programs</div>
     </div>
     <div id="map"></div>
