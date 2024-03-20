@@ -1,136 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <title>Buff Beyond Borders</title>
-  <link href="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css" rel="stylesheet">
-  <style>
-    body, html {
-      margin: 0;
-      padding: 0;
-      width: 100%;
-      height: 100%;
-    }
-    
-    #map {
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      width: 100%;
-    }
-    
-    .navbar {
-      background-color: #333;
-      overflow: hidden;
-      position: relative;
-      z-index: 1;
-    }
-    
-    .navbar a {
-      float: left;
-      display: block;
-      color: white;
-      text-align: center;
-      padding: 10px 16px;
-      text-decoration: none;
-      border-right: 1px solid #ccc;
-    }
-    
-    .navbar a:hover,
-    .navbar a.selected {
-      background-color: #ddd;
-      color: black;
-    }
-    
-    .navbar a:last-child {
-      padding-bottom: 14px;
-      border-right: none;
-    }
-    
-    #search-box {
-      position: absolute;
-      top: 0;
-      right: 0;
-      width: 40px;
-      height: 40px;
-      background-color: white;
-      border: none;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 12px;
-      pointer-events: none;
-    }
-    
-    #education-section {
-      padding: 20px;
-      z-index: 10;
-    }
-    #education-section h2 {
-      font-size: 24px;
-      font-weight: bold;
-      margin-bottom: 10px;
-    }
-    
-    #education-section h3 {
-      font-size: 18px;
-      font-weight: bold;
-      margin-bottom: 5px;
-    }
-    
-    #education-section h4 {
-      font-size: 14px;
-      font-weight: bold;
-      margin-bottom: 10px;
-      color: #666;
-    }
-    
-    #education-section img {
-      float: left;
-      margin-right: 10px;
-    }
-    
-    #education-section p {
-      font-size: 14px;
-      color: #333;
-      margin-bottom: 0;
-    }
-  </style>
+    <meta charset="utf-8" />
+    <title>Mapbox Example</title>
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.js"></script>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.css" rel="stylesheet" />
+    <style>
+        body, html, #map {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
 </head>
 <body>
-  <div class="navbar">
-    <a href="https://www.colorado.edu/educationabroad/programs" class="selected">Programs</a>
-    <a href="https://www.colorado.edu/educationabroad/staff">Staff</a>
-    <a href="https://www.colorado.edu/educationabroad/home-a-z">CU: Home A to Z</a>
-    <a href="https://www.colorado.edu/campus-map">Campus Map</a>
-    <a href="https://www.colorado.edu/educationabroad/login">LOGIN</a>
-    <div id="search-box" title="Search our programs">
-      Search
-    </div>
-  </div>
-  <div id="education-section">
-    <h2>Education</h2>
-    <h3>Education Abroad</h3>
-    <h4>UNIVERSITY OF COLORADO BOULDER</h4>
-    <p>
-      Please note that the search function in this section is for display purposes only and does not perform any actual search functionality.
-    </p>
-  </div>
-  <div id="map"></div>
-  <script>
-    // Add your Mapbox access token here
-    mapboxgl.accessToken = 'pk.eyJ1IjoiZW5vdmFpIiwiYSI6ImNsdGl4YnVoZzBrZHEyaHRrNnoxZjQzdHkifQ.7lB5Jkr8MUsVVaxziEKjRg';
-
-    // Replace this with the URL of your Mapbox style
-    const mapStyle = 'mapbox://styles/mapbox/streets-v11';
-
-    // Create a new Mapbox map
-    const map = new mapboxgl.Map({
-      container: 'map',
-      style: mapStyle,
-      center: [-74.5, 40],
-      zoom: 9
-    });
-  </script>
+    <div id="map"></div>
+    <script>
+        // Replace YOUR_ACCESS_TOKEN with your actual access token (but you already have it in your example)
+        mapboxgl.accessToken = 'pk.eyJ1IjoiZW5vdmFpIiwiYSI6ImNsdGl4YnVoZzBrZHEyaHRrNnoxZjQzdHkifQ.7lB5Jkr8MUsVVaxziEKjRg';
+        const map = new mapboxgl.Map({
+            container: 'map',
+            style: 'mapbox://styles/mapbox/streets-v11',
+            center: [-74.5, 40], // Starting location (New York)
+            zoom: 9 // Starting zoom level
+        });
+    </script>
 </body>
 </html>
