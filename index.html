@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>My Mapbox Map</title>
+  <title>Buff Beyond Borders</title>
   <link href="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css" rel="stylesheet">
   <script src="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js"></script>
   <style>
@@ -12,15 +12,31 @@
       width: 100%;
       height: 100%;
     }
+     .navbar {
+      background-color: #333;
+      overflow: hidden;
+    }
+    
+    .navbar a {
+      float: left;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    
+    .navbar a:hover {
+      background-color: #ddd;
+      color: black;
+    }
   </style>
 </head>
 <body>
   <div id="map"></div>
   <script>
-    // Replace this with your Mapbox access token
     mapboxgl.accessToken = 'pk.eyJ1IjoiZW5vdmFpIiwiYSI6ImNsdGl4YnVoZzBrZHEyaHRrNnoxZjQzdHkifQ.7lB5Jkr8MUsVVaxziEKjRg';
-    
-    // Replace this with your Mapbox map style URL
+
     const mapStyle = 'mapbox://styles/mapbox/streets-v11';
     
     const map = new mapboxgl.Map({
@@ -30,5 +46,19 @@
       zoom: 9
     });
   </script>
+  <div class="navbar">
+    <a href="https://www.colorado.edu/educationabroad/programs">Programs</a>
+    <a href="https://www.colorado.edu/educationabroad/staff">Staff</a>
+    <a href="https://www.colorado.edu/educationabroad/bw">BW</a>
+    <a href="https://www.colorado.edu/educationabroad/north-america">North America</a>
+    <a href="https://www.colorado.edu/educationabroad/europe">Europe</a>
+    <a href="https://www.colorado.edu/educationabroad/south-america">South America</a>
+    <a href="https://www.colorado.edu/educationabroad/africa">Africa</a>
+    <a href="https://www.colorado.edu/educationabroad/asia">Asia</a>
+    <a href="https://www.colorado.edu/educationabroad/home-a-z">CU: Home A to Z</a>
+    <a href="https://www.colorado.edu/campus-map">Campus Map</a>
+    <a href="https://www.colorado.edu/educationabroad/australia">Australia</a>
+    <a href="https://www.colorado.edu/educationabroad/login">LOGIN</a>
+  </div>
 </body>
 </html>
