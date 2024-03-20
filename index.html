@@ -2,25 +2,129 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Mapbox GL Example</title>
+    <title>Buff Beyond Borders</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
     <style>
-        body, html, #map {
+        body, html {
             margin: 0;
             padding: 0;
-            width: 100%;
-            height: 100%;
         }
-    </style>
-</head>
+        .container {
+            background-color: #E0E0E0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 60px;
+            padding: 0 1rem;
+            font-family: 'Roboto Mono', monospace;
+        }
+        .header-left {
+            display: flex;
+            align-items: center;
+        }
+        .logo-title {
+            font-size: 1.2rem;
+            margin-right: 1rem;
+        }
+        .header-right {
+            display: flex;
+            align-items: center;
+        }
+        .search-input {
+            border: none;
+            outline: none;
+            background-color: #F2F2F2;
+            width: 100%;
+            height: 30px;
+            padding: 0 1rem;
+            font-size: 1rem;
+            color: #666666;
+        }
+        .additional-links {
+            display: flex;
+            margin-left: 1rem;
+        }
+        .link-item {
+            margin: 0 0.5rem;
+            font-size:0.9rem;
+            color: #666666;
+        }
+        a {
+            text-decoration: none;
+            color: #555555;
+       }
+       a:hover {color}
+      : #222 a222;
+        }
+        .:map-container {
+hover {color            height: calc(100vh: #222222;
+ - 60px        }
+        .map-container {
+);
+            position: relative;
+                   height: calc( }
+    </style100vh>
+</head> - 60px);
+            position:
 <body>
+    <div class=" relative;
+        }
+    </stylecontainer">
+        <div class="header->
+</head>left">
+            <
+<body>
+    <div class="div class="logo-container">
+        <title">
+                Education<br>
+              div class="header-left">
+            <div class="logo  Abroad
+            </div>
+            <div class="-title">
+                Education<br>
+              header  Ab-right">
+              road
+            </div>
+            <div class="  <input class="search-input" type="text"header placeholder="Search for programs-right">
+                <input" readonly>
+            </div>
+        class="search-input" type="text" </div>
+        placeholder="Search for programs" readonly>
+            <div class="additional-links">
+            <div class=" </div>
+        </div>
+       link-item"><a href="#program <div class="additional-links">
+            <div class="s">Programs</a></div>
+link-item"><            <div class="link-itema href="#program"><s">Programs</a href="#staffa></div>
+            <div class="">Staff</a></div>
+           link-item <div class="link"><-item"><a href="#searcha href="#staff">Staff</a">Search</a></div>
+        </div>
+    </></div>
+            <div class="link-item"><a href="#search">Search</a></div>
+    <div class="map-container">
+       div>
+        </div>
+    </div>
     <div id="map"></div>
-    <script src="https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.js"></script>
-    <link href="https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.css" rel="stylesheet">
+    </div> <div class="map-container">
+       
+    <script src="https://api. <div id="map"></div>mapbox.com/mapbox-gl-
+    </div>js/v2.
+    <script src6.1/map="https://api.box-gl.jsmapbox.com/mapbox-gl-"></script>
+    <link href="https://api.mapbox.com/mapboxjs/v2.6.1/mapbox-gl.js-gl-js/v2.6.1/mapbox-gl.css" rel"></script>
+    <link href="https://api.mapbox.com/mapbox="stylesheet">
     <script>
-        mapboxgl.accessToken = 'pk.eyJ1IjoiZW5vdmFpIiwiYSI6ImNsdGl4YnVoZzBrZHEyaHRrNnoxZjQzdHkifQ.7lB5Jkr8MUsVVaxziEKjRg';
-        const map = new mapboxgl.Map({
-            container: 'map',
-            style: 'mapbox://styles/mapbox/streets-v11',
+        mapboxgl.accessToken = 'pk.eyJ1Ij-gl-js/v2.6.1/mapbox-gl.css" rel="stylesheet">
+    <script>oiZW5vdmFpIiwiYSI6ImNsdGl4YnVoZzBr
+        mapboxgl.accessToken = 'pk.eyJ1IjZHEyaHRroiZW5vdmFpIiwiYSI6ImNsdGl4YNnoxZjQzdHkifQ.7lBnVoZzBr5Jkr8MUsVVaxziEKjRgZHEyaHRrNnoxZjQzdHkifQ.7lB';
+        const map = new mapbox5Jkr8Mgl.Map({
+UsVVaxzi            container: 'mapEKjRg',
+            style:';
+        const map 'mapbox:// = new mapboxgl.Map({
+styles/mapbox/stre            container: 'map',
+            style: 'mapbox://styles/mapbox/ets-v11',
+            center: [-74.5, 40],
+            zoom: streets-v11',
             center: [-74.5, 40],
             zoom: 9
         });
