@@ -26,16 +26,12 @@
             padding: 5px 10px;
             display: flex;
             align-items: center;
-            justify-content: flex-start; /* Change this to align the text to the left */
-            min-width: 150px; /* Add this to set a minimum width for the white box */
+            justify-content: center;
+            color: gray;
         }
 
         #navbar .brand {
             color: white;
-        }
-
-        #navbar .search {
-            margin-left: 10px; /* Add this to add some space between the white box and the text */
         }
 
         #map {
@@ -47,7 +43,19 @@
 <body>
     <div id="navbar">
         <div class="brand">Education Abroad</div>
-        <div class="navbar-item search">Search our programs</div>
+        <div class="navbar-item">Search our programs</div>
     </div>
     <div id="map"></div>
-    <script src="https://api.mapbox.com/mapbox-gl-js
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.js"></script>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.css" rel="stylesheet">
+    <script>
+        mapboxgl.accessToken = 'pk.eyJ1IjoiZW5vdmFpIiwiYSI6ImNsdGl4YnVoZzBrZHEyaHRrNnoxZjQzdHkifQ.7lB5Jkr8MUsVVaxziEKjRg';
+        const map = new mapboxgl.Map({
+            container: 'map',
+            style: 'mapbox://styles/mapbox/streets-v11',
+            center: [-74.5, 40],
+            zoom: 9
+       });
+    </script>
+</body>
+</html>
